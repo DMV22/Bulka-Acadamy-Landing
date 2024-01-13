@@ -5,7 +5,7 @@
 
 body {
   background-color: #1A173D;
-  color: #E25300;
+  color: #fff;
   font-family: "Righteous", sans-serif;
 }
 
@@ -387,6 +387,7 @@ template {
 
 .header__text {
   font-size: 36px;
+  color: #E25300;
 }
 
 .menu {
@@ -520,4 +521,61 @@ template {
   font-family: Ubuntu;
   font-size: 16px;
   line-height: 120%;
+}
+
+.opportunities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.opportunities__container {
+  margin-top: 109px;
+  max-width: 1144px;
+}
+.opportunities__title {
+  width: 744px;
+  font-size: 48px;
+}
+.opportunities__subtitle {
+  width: 744px;
+  font-family: Ubuntu;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.opportunity {
+  margin-top: 136px;
+  position: relative;
+  width: 345px;
+  height: 410px;
+}
+.opportunity:nth-child(odd) {
+  background-image: url("../img/rectangle-1.svg");
+  background-repeat: no-repeat;
+}
+.opportunity:nth-child(even) {
+  background-image: url("../img/rectangle-2.svg");
+  background-repeat: no-repeat;
+}
+.opportunity__image {
+  position: absolute;
+  top: -120px;
+  left: 10px;
+}
+.opportunity__info {
+  padding: 205px 23px 77px 22px;
+}
+.opportunity__title {
+  font-size: 34px;
+  text-align: center;
+}
+.opportunity__text {
+  margin-top: 9px;
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+.purple {
+  color: #5133A6;
 }/*# sourceMappingURL=style.css.map */
