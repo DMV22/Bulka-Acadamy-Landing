@@ -47,6 +47,9 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style-type: none
+}
 /* Grouping content
    ========================================================================== */
 
@@ -85,6 +88,8 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+
 }
 
 /**
