@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box;
+  cursor: url("../img/cursor-image.svg"), auto;
+}
+
+body {
+  background-color: #1A173D;
+  color: #E25300;
+  font-family: "Righteous", sans-serif;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -44,6 +51,10 @@ ul {
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Grouping content
    ========================================================================== */
 /**
@@ -77,6 +88,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -343,4 +355,50 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.header__container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 51px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__text {
+  font-size: 36px;
+  line-height: normal;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+}
+.menu__link {
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.menu__link:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #E25300;
+          text-decoration-color: #E25300;
+  text-underline-position: under;
+  text-decoration-thickness: 4px;
+}
+.menu__item-button {
+  border-radius: 24px;
+  background: #E25300;
+  border: none;
+  padding: 10px 16px;
 }/*# sourceMappingURL=style.css.map */
