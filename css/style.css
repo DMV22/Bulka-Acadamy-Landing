@@ -207,6 +207,10 @@ input {
   overflow: visible;
 }
 
+input {
+  outline: none;
+}
+
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -646,4 +650,101 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.subscribe__container {
+  max-width: 1144px;
+  margin-top: 172px;
+  position: relative;
+}
+.subscribe__info {
+  width: 908px;
+  padding: 32px 271px 34px 35px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(133, 100, 187, 0.67) 1.04%, rgba(102, 44, 197, 0.85) 88.02%);
+}
+.subscribe__title {
+  font-size: 48px;
+}
+.subscribe__subtitle {
+  width: 558px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  line-height: 120%;
+}
+.subscribe__form {
+  margin-top: 46px;
+  position: relative;
+  width: 602px;
+  height: 41px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.subscribe__email {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 185px;
+  color: rgba(81, 51, 166, 0.55);
+  border: none;
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+.subscribe__email::-moz-placeholder {
+  color: rgba(81, 51, 166, 0.55);
+}
+.subscribe__email:-ms-input-placeholder {
+  color: rgba(81, 51, 166, 0.55);
+}
+.subscribe__email::placeholder {
+  color: rgba(81, 51, 166, 0.55);
+}
+.subscribe__button {
+  position: absolute;
+  min-width: 152px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  background: #E25300;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+}
+.subscribe__image {
+  position: absolute;
+  top: -100px;
+  right: -30px;
+}
+
+.footer__container {
+  max-width: 1144px;
+  margin-top: 172px;
+}
+.footer__line {
+  height: 4px;
+  border-radius: 4px;
+  border: none;
+  background: #E25300;
+}
+.footer__info {
+  margin: 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__list {
+  display: flex;
+  gap: 47px;
+}
+.footer__link {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 18px;
+}
+
+.social__list {
+  display: flex;
+  gap: 23px;
 }/*# sourceMappingURL=style.css.map */
