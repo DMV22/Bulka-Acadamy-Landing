@@ -22,31 +22,64 @@
           alt="Logo: Bulka"
           class="header__logo"
         />
-        <h1 class="header__text">Bulka Academy</h1>
+        <h2 class="header__text">Bulka Academy</h2>
       </div>
-      <nav class="nav">
+      <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">About</a>
+            <a href="#" class="menu__link cursor">About</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Contacts</a>
+            <a href="#" class="menu__link cursor">Contacts</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Lessons</a>
+            <a href="#" class="menu__link cursor">Lessons</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Gallery</a>
+            <a href="#" class="menu__link cursor">Gallery</a>
           </li>
           <button class="menu__item-button">
-            <a href="#" class="menu__link">Subscribe </a>
+            <a href="#" class="menu__link cursor">Subscribe </a>
           </button>
         </ul>
       </nav>
+      <div class="burger__menu">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <img
+            src="./img/burger-menu.svg"
+            alt="Image: Burger menu"
+            class="menu__button cursor"
+          />
+        </label>
+        <div class="sidebar">
+          <label for="check">
+            <img src="./img/burger-menu-close.svg" class="menu__button-close" />
+          </label>
+          <ul class="sidebar__menu">
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Contacts</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Lessons</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Gallery</a>
+            </li>
+          </ul>
+          <button class="sidebar__menu-button">
+            <a href="#" class="menu__link">Subscribe </a>
+          </button>
+        </div>
+      </div>
     </header>
+
     <section class="container intro__container">
       <div class="intro__content">
-        <h1 class="intro__title">Your puRRRfect educator</h1>
+        <h1 class="intro__title title">Your puRRRfect educator</h1>
         <div class="intro__subtitle">
           <img
             src="./img/cat-small.svg"
@@ -121,7 +154,7 @@
       </div>
     </section>
     <section class="container opportunities__container">
-      <h1 class="opportunities__title">
+      <h1 class="opportunities__title title">
         Explore all opportunities of Bulka Academy
       </h1>
       <p class="opportunities__subtitle">
@@ -129,7 +162,7 @@
         content. All in one place. Let’s go!
       </p>
       <div class="opportunities">
-        <div class="opportunity">
+        <div class="opportunity cursor">
           <img
             src="./img/3d-cat-1.svg"
             alt="Image: 3D Cat-1"
@@ -143,7 +176,7 @@
             </p>
           </div>
         </div>
-        <div class="opportunity">
+        <div class="opportunity cursor">
           <img
             src="./img/3d-cat-2.svg"
             alt="Image: 3D Cat-2"
@@ -157,7 +190,7 @@
             </p>
           </div>
         </div>
-        <div class="opportunity">
+        <div class="opportunity cursor">
           <img
             src="./img/3d-cat-3.svg"
             alt="Image: 3D Cat-3"
@@ -174,29 +207,29 @@
       </div>
     </section>
     <section class="container gallery__container">
-      <h1 class="gallery__title">Enjoy Bulkas’ Gallery</h1>
+      <h1 class="gallery__title title">Enjoy Bulkas’ Gallery</h1>
       <p class="gallery__subtitle">Don’t be shy to review and like my photos</p>
       <div class="photos">
-        <a class="gradient" href="#">
+        <a class="gradient cursor" href="#">
           <img src="./img/gallery-1.svg" alt="Image: Gallery-1" class="photo" />
         </a>
-        <a class="gradient" href="#">
+        <a class="gradient cursor" href="#">
           <img src="./img/gallery-1.svg" alt="Image: Gallery-2" class="photo" />
         </a>
-        <a class="gradient" href="#">
+        <a class="gradient cursor" href="#">
           <img src="./img/gallery-2.svg" alt="Image: Gallery-3" class="photo" />
         </a>
-        <a class="gradient" href="#">
+        <a class="gradient cursor" href="#">
           <img src="./img/gallery-3.svg" alt="Image: Gallery-4" class="photo" />
         </a>
-        <a class="gradient" href="#">
+        <a class="gradient cursor" href="#">
           <img src="./img/gallery-3.svg" alt="Image: Gallery-5" class="photo" />
         </a>
       </div>
     </section>
     <section class="container subscribe__container">
       <div class="subscribe__info">
-        <h1 class="subscribe__title">You are in great paws!</h1>
+        <h1 class="subscribe__title title">You are in great paws!</h1>
         <p class="subscribe__subtitle">
           Subscribe to get more information about upcoming courses and new
           videos. You will also get an opportunity to share with other users
