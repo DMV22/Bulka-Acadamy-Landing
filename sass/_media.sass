@@ -155,18 +155,206 @@
       width: 100%
 
 @media screen and (max-width: 778px)
+  body
+    overflow-x: hidden
+
   .container
-    width: 95%
+    width: 90%
+
+  .intro
+    &__container
+      position: relative
+
+    &__content
+      width: 100%
+      padding: 20px
+
+    &__title
+      margin: 62px auto 9px auto
+      text-align: center
+
+    &__subtitle
+      margin: auto
+      padding: 0 21px
+
+      &-image
+        display: none
+
+    &__image
+      position: absolute
+      top: -10%
+      left: 54%
+      transform: translate(-50%, -50%)
+
+    &__button
+      width: 100%
+
+  .info__stat
+    gap: 50px
 
   .title
     font-size: 36px
+
+  .opportunities
+    &__container
+      margin-top: 49px
+    &__title, &__subtitle
+      width: 95%
+
+  .opportunity
+    &__image
+      top: -20%
+      left: calc(100% - 40%)
+
+  .gallery
+    &__container
+      margin-top: 49px
 
   .subscribe
     &__info
       padding: 60px 44px 34px 40px
 
-    &__title
+    &__subtitle
+      width: 100%
       margin-top: 11px
 
     &__form
+      width: 100%
       margin-top: 22px
+
+  .footer
+    &__container
+      margin-top: 60px
+
+@media screen and (max-width: 602px)
+  body
+    padding-top: 185px
+
+  .header__logo, .menu__button
+    width: 40px
+    heigth: 40px
+
+  .header
+    &__text
+      font-size: 24px
+
+  .intro
+    &__btn
+      gap: 18px
+    &__title
+      width: 275px
+      font-size: 30px
+
+  .info
+    &__stat
+      flex-direction: column
+      justify-content: space-between
+      gap: 17px
+      width: 95%
+
+  .stat
+    &__item
+      flex-direction: row
+      justify-content: start
+      height: max-content
+      position: relative
+
+      &-icon
+        order: 0
+      &-title
+        order: 1
+        font-size: 20px
+        position: absolute
+        left: 30%
+      &-value
+        order: 2
+        font-size: 24px
+        position: absolute
+        right: 0
+
+  .opportunity
+    margin-top: 109px
+    width: 312px
+    height: 290px
+
+    &:nth-child(odd)
+      background-image: url("../img/small-rectangle-1.svg")
+    &:nth-child(even)
+      background-image: url("../img/small-rectangle-2.svg")
+
+    &__info
+      padding: 117px 24px 51px 24px
+
+    &__text
+      font-size: 16px
+
+    &__image
+      width: 270px
+      height: 270px
+      top: -45%
+      left: 7%
+
+  .subscribe
+    &__container
+      margin-top: 189px
+    &__email
+      padding-right: 125px
+      font-size: 16px
+    &__button
+      min-width: 92px
+      font-size: 16px
+    &__image
+      top: -230px
+      right: -5%
+      width: 392px
+
+  .footer
+    &__info
+      gap: 25px
+    &__list
+      flex-direction: column
+      gap: 28px
+      align-items: start
+
+@media screen and (max-width: 392px)
+  .header
+    &__text
+      font-size: 24px
+
+  .intro
+    &__btn
+      flex-direction: column
+
+  .info
+    &__container
+      margin-top: 0
+    &__image
+      display: block
+
+  .opportunity
+    &__container
+      margin-top: 30px
+    &__title
+      font-size: 20px
+
+  .comment
+    gap: 14px
+    &__photo
+      width: 50px
+      height: 50px
+    &__info
+      &-title
+        font-size: 20px
+      &-text
+        font-size: 16px
+
+  .photos
+    display: flex
+    flex-direction: column
+
+  .gallery
+    &__container
+      margin-top: 30px
+
+  .title
+    font-size: 24px
