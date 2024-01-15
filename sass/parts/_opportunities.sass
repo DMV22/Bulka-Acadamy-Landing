@@ -1,0 +1,53 @@
+.opportunities
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 14px
+
+  &__container
+    margin-top: 109px
+    max-width: 1144px
+
+  &__title
+    width: 744px
+    font-size: 48px
+
+  &__subtitle
+    width: 744px
+    font-family: Ubuntu
+    font-size: 18px
+    margin-top: 15px
+
+.opportunity
+  margin-top: 136px
+  position: relative
+  width: 345px
+  height: 410px
+
+  &:nth-child(odd)
+    background-image: url("../img/rectangle-1.svg")
+    background-repeat: no-repeat
+
+  &:nth-child(even)
+    background-image: url("../img/rectangle-2.svg")
+    background-repeat: no-repeat
+
+  &__image
+    position: absolute
+    top: -120px
+    left: 10px
+
+  &__info
+    padding: 205px 23px 77px 22px
+
+  &__title
+    font-size: 34px
+    text-align: center
+
+  &__text
+    margin-top: 9px
+    font-family: Ubuntu
+    font-size: 18px
+
+.purple
+  color: $purple

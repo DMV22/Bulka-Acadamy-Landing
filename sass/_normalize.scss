@@ -41,7 +41,8 @@ main {
 
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
-  font-weight: 400
+  font-weight: 400;
+  line-height: normal;
 }
 
 ul {
@@ -204,6 +205,9 @@ input {
   overflow: visible;
 }
 
+input {
+  outline: none;
+}
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.

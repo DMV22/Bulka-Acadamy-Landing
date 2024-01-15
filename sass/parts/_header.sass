@@ -1,9 +1,19 @@
 .header__container
   max-width: 1064px
-  margin-top: 51px
+  margin: 51px auto
   display: flex
   justify-content: space-between
   align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+  z-index: 1000
+
+body
+  padding-top: 111px
 
 .header__title
   display: flex
@@ -12,7 +22,7 @@
 
 .header__text
   font-size: 36px
-  line-height: normal
+  color: $mainColor
 
 .menu
   display: flex
@@ -23,7 +33,6 @@
   &__link
     color: $white
     font-size: 16px
-    line-height: normal
     letter-spacing: 0.8px
 
   &__link:hover
@@ -37,3 +46,42 @@
     background: $mainColor
     border: none
     padding: 10px 16px
+
+#check
+  display: none
+
+.sidebar
+  position: fixed
+  width: 100%
+  max-width: 330px
+  height: 100vh
+  background: $mainColor
+  transition: all .5s
+  z-index: 1
+  top: 0
+  left: 100%
+  border-radius: 8px 0 0 8px
+  padding: 24px 24px 120px 24px
+
+  &__menu
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin: 30px 0
+
+    &-button
+      background: $bgColor
+      border-radius: 24px
+      border: none
+      padding: 10px 16px
+
+#check:checked
+  ~ .sidebar
+    left: calc(100% - 330px)
+
+.menu
+  &__button
+    &-close
+      width: 20px
+      heigth: 20px
+      cursor: pointer

@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Bulka Academy</title>
   </head>
   <body>
     <header class="container header__container">
@@ -22,28 +22,61 @@
           alt="Logo: Bulka"
           class="header__logo"
         />
-        <h1 class="header__text">Bulka Academy</h1>
+        <h2 class="header__text title">Bulka Academy</h2>
       </div>
-      <nav class="nav">
+      <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">About</a>
+            <a href="#" class="menu__link cursor">About</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Contacts</a>
+            <a href="#" class="menu__link cursor">Contacts</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Lessons</a>
+            <a href="#" class="menu__link cursor">Lessons</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Gallery</a>
+            <a href="#" class="menu__link cursor">Gallery</a>
           </li>
           <button class="menu__item-button">
-            <a href="#" class="menu__link">Subscribe </a>
+            <a href="#" class="menu__link cursor">Subscribe </a>
           </button>
         </ul>
       </nav>
+      <div class="burger__menu">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <img
+            src="./img/burger-menu.svg"
+            alt="Image: Burger menu"
+            class="menu__button cursor"
+          />
+        </label>
+        <div class="sidebar">
+          <label for="check">
+            <img src="./img/burger-menu-close.svg" class="menu__button-close" />
+          </label>
+          <ul class="sidebar__menu">
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Contacts</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Lessons</a>
+            </li>
+            <li class="sidebar__menu-item">
+              <a href="#" class="menu__link">Gallery</a>
+            </li>
+          </ul>
+          <button class="sidebar__menu-button">
+            <a href="#" class="menu__link">Subscribe </a>
+          </button>
+        </div>
+      </div>
     </header>
+
     <section class="container intro__container">
       <div class="intro__content">
         <h1 class="intro__title">Your puRRRfect educator</h1>
@@ -71,5 +104,186 @@
         class="intro__image"
       />
     </section>
+    <section class="container info__container">
+      <img src="./img/3d-cat-5.svg" alt="Image: 3D Cat-5" class="info__image" />
+      <div class="info__block">
+        <div class="info__stat">
+          <div class="stat__item">
+            <h3 class="stat__item-title">Students</h3>
+            <img
+              src="./img/icon-1.svg"
+              alt="Icon: Icon-1"
+              class="stat__item-icon icon"
+            />
+            <p class="stat__item-value">8500+</p>
+          </div>
+          <div class="stat__item">
+            <h3 class="stat__item-title">Lessons</h3>
+            <img
+              src="./img/icon-2.svg"
+              alt="Icon: Icon-2"
+              class="stat__item-icon"
+            />
+            <p class="stat__item-value">200+</p>
+          </div>
+          <div class="stat__item">
+            <h3 class="stat__item-title">Likes</h3>
+            <img
+              src="./img/icon-3.svg"
+              alt="Icon: Icon-3"
+              class="stat__item-icon"
+            />
+            <p class="stat__item-value">99k+</p>
+          </div>
+        </div>
+        <hr class="info__line" />
+        <div class="info__comment">
+          <div class="comment">
+            <img
+              src="./img/avatar-1.svg"
+              alt="Photo: Avatar"
+              class="comment__photo"
+            />
+            <div class="comment__info">
+              <h3 class="comment__info-title">John Doe</h3>
+              <p class="comment__info-text">
+                It was really cool experience, I love Bulka so much!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container opportunities__container">
+      <h1 class="opportunities__title title">
+        Explore all opportunities of Bulka Academy
+      </h1>
+      <p class="opportunities__subtitle">
+        You can find here tons of useful information and interesting, fun
+        content. All in one place. Let’s go!
+      </p>
+      <div class="opportunities">
+        <div class="opportunity cursor">
+          <img
+            src="./img/3d-cat-1.svg"
+            alt="Image: 3D Cat-1"
+            class="opportunity__image"
+          />
+          <div class="opportunity__info">
+            <h3 class="opportunity__title">Group lessons</h3>
+            <p class="opportunity__text">
+              Make new friends, join teams and learn in a fun and productive
+              way. We are waiting for you!
+            </p>
+          </div>
+        </div>
+        <div class="opportunity cursor">
+          <img
+            src="./img/3d-cat-2.svg"
+            alt="Image: 3D Cat-2"
+            class="opportunity__image"
+          />
+          <div class="opportunity__info purple">
+            <h3 class="opportunity__title">Videos</h3>
+            <p class="opportunity__text">
+              Search among more than 500 videos and you will definitely find
+              something interesting for you.
+            </p>
+          </div>
+        </div>
+        <div class="opportunity cursor">
+          <img
+            src="./img/3d-cat-3.svg"
+            alt="Image: 3D Cat-3"
+            class="opportunity__image"
+          />
+          <div class="opportunity__info">
+            <h3 class="opportunity__title">Quizzes</h3>
+            <p class="opportunity__text">
+              Test your knowledge in various tests and quizzes personally
+              selected by Bulka for you
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container gallery__container">
+      <h1 class="gallery__title title">Enjoy Bulkas’ Gallery</h1>
+      <p class="gallery__subtitle">Don’t be shy to review and like my photos</p>
+      <div class="photos">
+        <a class="gradient cursor" href="#">
+          <img src="./img/gallery-1.svg" alt="Image: Gallery-1" class="photo" />
+        </a>
+        <a class="gradient cursor" href="#">
+          <img src="./img/gallery-1.svg" alt="Image: Gallery-2" class="photo" />
+        </a>
+        <a class="gradient cursor" href="#">
+          <img src="./img/gallery-2.svg" alt="Image: Gallery-3" class="photo" />
+        </a>
+        <a class="gradient cursor" href="#">
+          <img src="./img/gallery-3.svg" alt="Image: Gallery-4" class="photo" />
+        </a>
+        <a class="gradient cursor" href="#">
+          <img src="./img/gallery-3.svg" alt="Image: Gallery-5" class="photo" />
+        </a>
+      </div>
+    </section>
+    <section class="container subscribe__container">
+      <div class="subscribe__info">
+        <h1 class="subscribe__title title">You are in great paws!</h1>
+        <p class="subscribe__subtitle">
+          Subscribe to get more information about upcoming courses and new
+          videos. You will also get an opportunity to share with other users
+          your unique knowledge by writing articles and posting video lessons!
+        </p>
+        <form class="subscribe__form">
+          <input
+            type="email"
+            class="subscribe__email"
+            placeholder="Your email address"
+          />
+          <button class="subscribe__button">Subscribe</button>
+        </form>
+      </div>
+      <img
+        src="./img/3d-cat-4.svg"
+        alt="Image: 3D Cat-4"
+        class="subscribe__image"
+      />
+    </section>
+    <footer class="container footer__container">
+      <hr class="footer__line" />
+      <div class="footer__info">
+        <div class="social__list">
+          <a href="#" class="social__item">
+            <img
+              src="./img/icon-youtube.svg"
+              alt="Icon: Youtube"
+              class="social__link"
+            />
+          </a>
+          <a href="#" class="social__item">
+            <img
+              src="./img/icon-instagram.svg"
+              alt="Icon: Instagram"
+              class="social__link"
+            />
+          </a>
+          <a href="#" class="social__item">
+            <img
+              src="./img/icon-facebook.svg"
+              alt="Icon: Facebook"
+              class="social__link"
+            />
+          </a>
+        </div>
+        <div class="footer__list">
+          <a href="#" class="footer__link">Contacts</a>
+          <a href="#" class="footer__link">FAQ</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
